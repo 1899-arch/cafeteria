@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-family: 'Hiragino Sans','ヒラギノ角ゴシック','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic''ＭＳ ゴシック','Helvetica Neue','Helvetica','Arial',sans-serif;
+}
+
+.inr{
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*----ヘッダー----*/
+
+/*ナビゲーション*/
+.header__list{
+    padding: 1px 10px 40px; 
+    padding-left: 60%;
+}
+
+.header__item{
+    list-style: none;
+    display: inline;
+}
+
+.header__link{
+    width: 90px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-family: "Arial";
+    font-size: 20px;
+    float: left; 
+    margin: 10px 5px 0px;
+    color: #fff; 
+    border-bottom: 1px dotted #fff;
+    transition: 0.3s;
+}
+
+.header__link:first-letter{
+    font-size: 25px;
+    letter-spacing: 4px;
+}
+
+.header__link:hover{
+    opacity: 0.5;
+}
+
+/*ヘッダー画面*/
+header{
+    position: relative;
+    height: 480px;
+    background: center center no-repeat;
+    background-image: url("../img/hotel-afternoon.jpg");
+    background-size: cover;
+}
+
+.header__txt-block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Bitter', serif;
+}
+
+/*----About----*/
+.about__txt-block{
+    font-family: 'Bitter', serif;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.about__ttl{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.about__txt{
+    font-size: 20px;
+}
+
+/*----Menu----*/
+.menu__ttl{
+    font-family: 'Bitter', serif;
+    margin: 70px auto 40px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.menu__list > * {
+    width: 33%;
+}
+
+.menu__block{
+    margin-top: 90px;
+}
+
+.menu__item{
+    float: left;
+    list-style: none;
+    margin: 0 20px 15px 0;
+    background-image: cover;
+    text-align: center;
+    font-family: 'Arial';
+}
+
+.menu__item:nth-child(3n){
+    margin-right: 0;
+}
+
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+    width: 810px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.menu__img{
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.menu__img:hover{
+    opacity: 0.5;
+}
+
+.menu__btn{
+    margin: 5px auto;
+    background-color: #d2691e;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Bitter', serif;
+    width: 185px;
+    display: block; 
+    text-align: center; 
+    line-height: 50px; 
+    margin-top: 20px; 
+    border-radius: 5px; 
+    border: 3px solid #d2691e; 
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu__btn:hover{
+    background-color: #ffffff;
+    color: #d2691e;
+}
+
+
+/*----News----*/
+
+.news__block{
+    margin: 50px auto;
+    font-family: 'Bitter', serif;
+}
+
+.news__ttl{
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    border-bottom: 2px dotted #979797;
+}
+
+.news__date{
+    padding-right: 30px;
+}
+
+/*----フッター----*/
+footer{
+    position: relative;
+    height: 480px;
+    background: center center no-repeat;
+    background-image: url("../img/footer.jpg");
+    background-size: cover;
+}
+
+.footer__txt-block{
+    text-align: center;
+    padding-top: 150px;
+    font-family: 'Bitter', serif;
+    color: #fff;
+
+}
+
+.footer__ttl{
+    font-size: 40px;
+}
+
+.footer__txt{
+    margin: 20px auto 100px;
+}
+
+.footer__copy{
+    text-align: center;
+    color: #fff;
+}
